@@ -1,0 +1,69 @@
+
+
+ * Komutlar ve Ödev Gereksinimlerine Göre Açıklamalar:
+ * 1. Dosya okuma: agaclar.txt içeriğinden satırlar okunup her satır bir ağaca dönüştürülüyor.
+ * 2. Bağlı Liste: BinaryTree nesneleri LinkedList içinde saklanıyor.
+ * 3. Menü:
+ *    - A: Önceki düğüme gider.
+ *    - D: Sonraki düğüme gider.
+ *    - S: Geçerli düğümü siler.
+ *    - W: Geçerli ağacı aynalar.
+ *    - Q: Programdan çıkış yapar.
+ * 4. Çizim: Liste ve ağaçların görüntülenmesi için çizim fonksiyonları kullanılıyor.
+ 
+
+ Bu proje, ikili ağaçları bir bağlı liste içinde yönetmek ve kullanıcı komutlarıyla listeye müdahale etmeyi sağlar. Projenin özellikleri ve çalışma prensipleri aşağıdaki gibidir:
+
+Özellikler:
+
+"agaclar.txt" dosyasından her satırı okuyarak bir ikili arama ağacı oluşturur.
+
+Oluşan her ağaç, bağlı listeye bir düğüm olarak eklenir.
+
+Kullanıcı menüsü aracılığıyla liste düğümlerinde gezinme (Önceki/Sonraki), düğüm silme ve ağaç aynalama gibi işlemler yapılabilir.
+
+Kullanım Talimatları:
+
+Programı başlatmadan önce, proje dizininde "agaclar.txt" dosyasının bulunduğundan emin olun.
+
+Programın ana menüsünden aşağıdaki tuşlar ile işlem yapabilirsiniz:
+
+A: Bir önceki liste düğümünü görüntüleyin.
+
+D: Bir sonraki liste düğümünü görüntüleyin.
+
+S: Geçerli düğümü ve ağaç yapısını silin.
+
+W: Geçerli düğümdeki ağaç yapısını aynalayın.
+
+Q: Programdan çıkın.
+
+Dosya Yapısı:
+
+src/: Kaynak kodların bulunduğu dizin.
+
+include/: Başlık dosyaları.
+
+lib/: Derlenmiş kütüphane dosyaları.
+
+bin/: Çalıştırılabilir dosyalar.
+
+doc/: Rapor dosyası.
+
+Notlar:
+
+Proje, MinGW derleyicisinde test edilmiştir.
+
+İkili ağaçlar ve bağlı liste ile ilgili sınır durumları (boş liste, son düğüm silinmesi vb.) için ek kontroller yapılmıştır.
+
+Geliştirme sırasında bellek sızıntısını engellemek için delete komutları kullanılmıştır.
+
+
+makefile oluşturmak için
+
+mingw32-make
+
+kod çalıştırmak için 
+
+./bin/main.exe
+
